@@ -1,0 +1,72 @@
+{
+  "name": "@orfeo/timeline-validator",
+  "version": "0.1.0",
+  "validates-Timeline-version": "0.1.0",
+  "description": "A validator for the Timeline file format.",
+  "keywords": [
+    "Timeline",
+    "file",
+    "format",
+    "validator",
+    "Orfeo"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "eslintConfig": {
+    "globals": {
+      "describe": "readonly",
+      "it": "readonly"
+    },
+    "rules": {
+      "key-spacing": [
+        "error",
+        {
+          "mode": "minimum"
+        }
+      ],
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline"
+        }
+      ],
+      "no-multi-spaces": [
+        "error",
+        {
+          "exceptions": {
+            "ObjectExpression": true,
+            "ArrayExpression": true,
+            "IfStatement": true
+          }
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "nyc --reporter=lcov --reporter=text npm run units_with_standardx",
+    "cover": "nyc --reporter=lcov --reporter=text npm run units",
+    "standardx": "standardx",
+    "units_with_standardx": "npm run units && standardx",
+    "units": "mocha --reporter dot"
+  },
+  "author": "Pierre-Emmanuel Lévesque <pierre.e.levesque@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orfeo-lang/timeline-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orfeo-lang/timeline-validator/issues"
+  },
+  "homepage": "https://github.com/orfeo-lang/timeline-validator/#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "standardx": "^5.0.0"
+  }
+}
