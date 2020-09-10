@@ -56,12 +56,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/orfeo-lang/timeline-validator.git"
+    "url": "git+https://github.com/orfeolang/timeline-validator.git"
   },
   "bugs": {
-    "url": "https://github.com/orfeo-lang/timeline-validator/issues"
+    "url": "https://github.com/orfeolang/timeline-validator/issues"
   },
-  "homepage": "https://github.com/orfeo-lang/timeline-validator/#readme",
+  "homepage": "https://github.com/orfeolang/timeline-validator/#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",

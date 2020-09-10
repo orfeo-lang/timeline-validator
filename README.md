@@ -1,7 +1,7 @@
-[build-status]:    https://travis-ci.org/orfeo-lang/timeline-validator.svg?branch=master
-[build]:           https://travis-ci.org/orfeo-lang/timeline-validator
-[coverage-status]: https://coveralls.io/repos/github/orfeo-lang/timeline-validator/badge.svg?branch=master
-[coverage]:        https://coveralls.io/github/orfeo-lang/timeline-validator?branch=master
+[build-status]:    https://travis-ci.org/orfeolang/timeline-validator.svg?branch=master
+[build]:           https://travis-ci.org/orfeolang/timeline-validator
+[coverage-status]: https://coveralls.io/repos/github/orfeolang/timeline-validator/badge.svg?branch=master
+[coverage]:        https://coveralls.io/github/orfeolang/timeline-validator?branch=master
 [standard-badge]:  https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [standard]:        https://standardjs.com
 [mit-badge]:       https://img.shields.io/badge/License-MIT-yellow.svg
