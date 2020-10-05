@@ -17,28 +17,33 @@ module.exports = file => {
   const lines = file.split('\n')
   lines.forEach((line, i) => {
     line = line.trim()
+    const lineNum = i + 1
     if (line !== '') {
       const tokens = line.split(' ')
       const timepoint = tokens.shift()
       if (isNaN(timepoint)) {
-        throwError(i,
+        throwError(
+          lineNum,
           'A timepoint must be number. Found: ' + timepoint
         )
       }
       const newTimepoint = parseFloat(timepoint)
       if (newTimepoint < 0) {
-        throwError(i,
+        throwError(
+          lineNum,
           'A timepoint cannot be negative. Found: ' + timepoint
         )
       }
       if (typeof lastTimepoint === 'undefined') {
         if (newTimepoint !== 0) {
-          throwError(i,
+          throwError(
+            lineNum,
             'The first timepoint must be zero. Found: ' + timepoint
           )
         }
       } else if (newTimepoint <= lastTimepoint) {
-        throwError(i,
+        throwError(
+          lineNum,
           'Timepoints must be in chronological order.' + '\n' +
           newTimepoint + ' cannot follow ' + lastTimepoint
         )
