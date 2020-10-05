@@ -59,8 +59,12 @@ Command                        | Description
 
 ## Copyright
 
-Copyright (c) 2019-2020, Pierre-Emmanuel Lévesque
+Copyright (c) 2019-2020, <a href="https://github.com/pelevesque">Pierre-Emmanuel Lévesque</a>
 
 ## License
 
 MIT
+
+<div align="center">
+  <sub>Built with ❤︎ by <a href="https://github.com/pelevesque">Pierre-Emmanuel Lévesque</a>
+</div>
