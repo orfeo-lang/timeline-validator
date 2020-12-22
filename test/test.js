@@ -79,6 +79,18 @@ describe('#timelineValidator()', () => {
 `
       expect(isValid(file)).to.equal(true)
     })
+
+    it('true for empty lines', () => {
+      const file =
+`
+
+0 datum
+
+1 datum
+
+`
+      expect(isValid(file)).to.equal(true)
+    })
   })
 
   describe('errors', () => {
