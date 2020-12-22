@@ -91,6 +91,17 @@ describe('#timelineValidator()', () => {
 `
       expect(isValid(file)).to.equal(true)
     })
+
+    it('true for repeated timepoints', () => {
+      const file =
+`0
+0
+1.5
+1.5
+1.5
+`
+      expect(isValid(file)).to.equal(true)
+    })
   })
 
   describe('errors', () => {

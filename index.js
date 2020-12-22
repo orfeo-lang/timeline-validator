@@ -37,7 +37,7 @@ module.exports = file => {
             'The first timepoint must be zero. Found: ' + timepoint
           )
         }
-      } else if (newTimepoint <= lastTimepoint) {
+      } else if (newTimepoint < lastTimepoint) {
         throwError(
           lineNum,
           'Timepoints must be in chronological order.' + '\n' +
