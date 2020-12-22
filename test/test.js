@@ -60,7 +60,7 @@ describe('#timelineValidator()', () => {
 
     it('true for integer and float timepoints with datum', () => {
       const file =
-`0     datum
+`0    datum
 1     datum
 1.5   datum
 15    datum datum
@@ -106,7 +106,7 @@ describe('#timelineValidator()', () => {
 
     it('throw an error when a timepoint is negative', () => {
       const file =
-`0 datum
+`0  datum
 -10 datum
 `
       expect(f(file)).to.throw(
