@@ -92,6 +92,13 @@ describe('#timelineValidator()', () => {
       expect(isValid(file)).to.equal(true)
     })
 
+    it('true when the first timepoint is not 0', () => {
+      const file =
+`1
+`
+      expect(isValid(file)).to.equal(true)
+    })
+
     it('true for repeated timepoints', () => {
       const file =
 `0
@@ -123,16 +130,6 @@ describe('#timelineValidator()', () => {
       expect(f(file)).to.throw(
         'On line 2' + '\n' +
         'A timepoint cannot be negative. Found: -10'
-      )
-    })
-
-    it('throw an error when the first timepoint is not zero', () => {
-      const file =
-`10 datum
-`
-      expect(f(file)).to.throw(
-        'On line 1' + '\n' +
-        'The first timepoint must be zero. Found: 10'
       )
     })
 

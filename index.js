@@ -30,14 +30,10 @@ module.exports = file => {
           'A timepoint cannot be negative. Found: ' + timepoint
         )
       }
-      if (typeof lastTimepoint === 'undefined') {
-        if (newTimepoint !== 0) {
-          throwError(
-            lineNum,
-            'The first timepoint must be zero. Found: ' + timepoint
-          )
-        }
-      } else if (newTimepoint < lastTimepoint) {
+      if (
+        typeof lastTimepoint !== 'undefined' &&
+        newTimepoint < lastTimepoint
+      ) {
         throwError(
           lineNum,
           'Timepoints must be in chronological order.' + '\n' +
