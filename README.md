@@ -30,7 +30,7 @@ https://www.npmjs.com/package/@orfeo/timeline-validator
 
 ```js
 const isValid = require('@orfeo/timeline-validator')
-const file = // Load the timeline file.
+const file = // Load the Timeline file.
 
 // Without error reporting.
 if (isValid(file)) {
